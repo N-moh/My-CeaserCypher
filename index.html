@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+textarea{
+  background-image: url('images/cc4.png');
+  font-family: 'Alfa Slab One';font-size: 22px;
+}
+body{
+  color:white;
+}
+</style>
+  <body>
+  <div style="background-image: url('images/pic7.jpg');  height: 100vh;
+  min-width: 100vh;
+  flex: 1;
+  display: flex;
+  align-items:center;
+  justify-content:left;
+  padding: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;">
+  <div>
+<h1 style="color:gold; font-size:60px;" >Ceaser cipher Decoder</h1>
+  <h4>Type your secret message, decide the key (number of shifts); encrypt or decrypt it !<h4>
+
+    <form>
+
+  <h3 id="titleId">Plain text:</h3>
+  <div>
+  <textarea id="sourceText" rows="6" cols="40"spellcheck="false" value=""></textarea><br/><br/>
+  </div>
+  <label>Shift:</label>
+  <input type="number" name="shift" value="3" min="1" max="26"><br/> <br/>
+<div>      
+    <input type="button" id="decrypt" 
+       value="Encrypt" 
+       onclick="encryptText();">
+    <input type="button" id="decrypt" 
+       value="Decrypt the text" 
+       onclick="decryptText();">    
+  </div>
+</form>
+</div>
+
+    <script src="ceaserCipher.js"></script>
+  </body>
+</html>
+
